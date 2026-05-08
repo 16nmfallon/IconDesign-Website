@@ -1,6 +1,6 @@
 :root {
   --bg: #ffffff;
-  --bg-alt: #fbf6ea;
+  --bg-alt: #ffffff;
   --ink: #1c1812;
   --ink-soft: #4a4133;
   --muted: #8a8278;
@@ -75,8 +75,8 @@ a:hover { color: var(--gold); }
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 .brand {
   display: flex;
@@ -86,26 +86,10 @@ a:hover { color: var(--gold); }
   color: var(--ink);
 }
 .brand-logo {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  object-fit: cover;
+  height: 84px;
+  width: auto;
+  object-fit: contain;
   display: block;
-}
-.brand-text { display: flex; flex-direction: column; }
-.brand-mark {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 700;
-  font-size: 1.25rem;
-  letter-spacing: 0.14em;
-  color: var(--gold-deep);
-}
-.brand-sub {
-  font-size: 0.7rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-top: 4px;
 }
 .nav { display: flex; gap: 2rem; align-items: center; }
 .nav a {
@@ -305,9 +289,11 @@ a:hover { color: var(--gold); }
   flex-direction: column;
   gap: 1.25rem;
   padding: 2rem;
-  background: var(--bg-alt);
+  background: #fff;
   border-radius: 6px;
+  border: 1px solid var(--line);
   border-left: 3px solid var(--gold);
+  box-shadow: 0 8px 24px -18px rgba(138, 111, 44, 0.4);
 }
 .stat { display: flex; flex-direction: column; }
 .stat-num {
