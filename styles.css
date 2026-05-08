@@ -4,11 +4,11 @@
   --ink: #1c1812;
   --ink-soft: #4a4133;
   --muted: #8a8278;
-  --line: #ead7a8;
+  --line: #e6d4a3;
   --line-soft: #ece6da;
-  --gold: #b8954c;
-  --gold-deep: #8a6f2c;
-  --gold-light: #d4b265;
+  --gold: #b08840;
+  --gold-deep: #836229;
+  --gold-light: #c9a45a;
   --dark: #1c1812;
   --dark-soft: #2a241a;
   --max: 1140px;
@@ -60,7 +60,7 @@ a:hover { color: var(--gold); }
   color: var(--gold-deep);
   margin: 0 0 0.8rem;
 }
-.eyebrow.light { color: var(--gold-light); }
+.eyebrow.light { color: var(--gold-deep); }
 
 /* Header */
 .site-header {
@@ -151,11 +151,12 @@ a:hover { color: var(--gold); }
 }
 .section-alt { background: var(--bg-alt); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .section-dark {
-  background: var(--dark);
-  color: #f3ece2;
+  background: #fff;
+  color: var(--ink);
+  border-top: 1px solid var(--line);
 }
-.section-dark h2 { color: #fff; }
-.section-dark p { color: #c9bfb2; }
+.section-dark h2 { color: var(--ink); }
+.section-dark p { color: var(--ink-soft); }
 
 .section-head {
   max-width: 720px;
@@ -331,28 +332,29 @@ a:hover { color: var(--gold); }
   gap: 1rem;
   align-items: start;
   padding-bottom: 1.5rem;
-  border-bottom: 1px solid #3a3128;
+  border-bottom: 1px solid var(--line);
 }
 .contact-list li:last-child { border-bottom: none; }
 .contact-label {
   font-size: 0.75rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--gold-light);
+  color: var(--gold-deep);
   padding-top: 4px;
 }
 .contact-list a, .contact-list span:not(.contact-label) {
-  color: #f3ece2;
+  color: var(--ink);
   font-size: 1.05rem;
 }
-.contact-list a:hover { color: var(--gold-light); }
+.contact-list a:hover { color: var(--gold-deep); }
 
 /* Footer */
 .site-footer {
-  background: var(--dark-soft);
-  color: #a89e91;
+  background: #fff;
+  color: var(--muted);
   padding: 1.5rem 0;
   font-size: 0.88rem;
+  border-top: 1px solid var(--line);
 }
 .footer-inner {
   display: flex;
@@ -360,8 +362,8 @@ a:hover { color: var(--gold); }
   flex-wrap: wrap;
   gap: 0.5rem;
 }
-.footer-inner p { margin: 0; color: #a89e91; }
-.footer-tag { font-style: italic; }
+.footer-inner p { margin: 0; color: var(--muted); }
+.footer-tag { font-style: italic; color: var(--gold-deep); }
 
 /* Responsive */
 @media (max-width: 760px) {
