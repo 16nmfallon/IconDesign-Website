@@ -86,8 +86,9 @@ a:hover { color: var(--gold); }
   color: var(--ink);
 }
 .brand-logo {
-  height: 84px;
-  width: auto;
+  width: 320px;
+  max-height: 110px;
+  height: auto;
   object-fit: contain;
   display: block;
 }
